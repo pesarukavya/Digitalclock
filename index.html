@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/digitalclock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./Javascript/digitalclock.js" defer></script>
+</head>
+<body onload="dateOutput();bgImage()">
+    <i class="fa-regular fa-bell fa-shake" id="icon" onclick="openAlarmWindow()"></i><!--we have to add icon by using font awesome cdn linkand after copying the link paste in head part and then go for font awesome for icons-->
+    <div id="toggle">
+        <input type="button" id="button" onclick="toggleButton()">
+    </div>
+    <div id="containerClock">
+        <div id="hrsContainer">
+            <h1 id="hours12"></h1>
+            <h1 id="hours24"></h1>
+        </div>
+        <h1 id="date"></h1>
+        <h1 id="day"></h1>
+    </div>
+    <h1 id="seconds"></h1>
+    <div id="containerAlarm">
+        <span id="close" onclick="closeAlarmWindow()">+</span> 
+        <input class="inp" type="date" oninput="userData()">
+        <input class="inp" type="time" oninput="userData()">
+<audio src="./Audio/clock-alarm-8762.mp3"></audio>
+   
+    </div>
+</body>
+</html>

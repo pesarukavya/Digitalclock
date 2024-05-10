@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(75deg,orange,skyblue); */
+    background-image: url("../Asset/Images/Sunday.jpg");
+background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: context-menu;
+}
+#containerClock{
+    width: 70vw;
+    height: 60vh;
+    background-color: rgba(0,0,0,0.418);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#hrsContainer{
+    width: 100%;
+    height: 8vw;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    color: white;
+}
+#hours12{
+    position: absolute;
+}
+#hours24{
+    position: absolute;
+    display: none;
+}
+#date{
+    font-size: 4vw;
+    color: royalblue;
+}
+#day{
+    font-size: 3vw;
+    color: seagreen;
+}
+h1{
+    letter-spacing: 2vw;
+    text-shadow: 2px 2px 2px black;
+}
+#seconds{
+    position: absolute;
+    z-index: -1;
+    font-size: 55vw;
+    color: black;
+}
+#toggle{
+    width: 6vw;
+    height: 3vw;
+    background-color: white;
+    position: fixed;
+    left: 1vw;
+    top: 1vw;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#button{
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: black;
+    position: absolute;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#icon{
+    font-size: 3vw;
+    color: black;
+    text-shadow: 2px 2px 2px black;
+    position: fixed;
+    right: 1vw;
+    top:3vw;
+    cursor: pointer;
+}
+#containerAlarm{
+    width: 50vw;
+    height: 25vw;
+    background-color: #4169e17f;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    border-radius: 1vw;
+    box-shadow: 5px 5px 5px black;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#close{
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    right: 1vw;
+    top: 0vw;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-shadow: 0.3vw 0.3vw 0.3vw black;
+}
+.inp{
+    width: 40%;
+    height: 3vw;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2vw;
+    border-bottom: 2px solid black;
+    text-shadow: 1px 2px 5px black;
+}
